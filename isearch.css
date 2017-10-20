@@ -89,6 +89,10 @@
     padding: 0 11px 0 13px;
     text-overflow: ellipsis;
     width: 400px;
+    height: 29px;
+   /*border-radius: 2px;*/
+   border: none;
+   box-shadow: 0px 1.5px 1px 0 rgba(0, 0, 0, 0.16);
   }
 
   #pac-input:focus {
@@ -156,7 +160,7 @@
     color: white;
   }
 
-  img {
+  #img {
     height: 55px;
     float: right;
     margin-right: 25px;
