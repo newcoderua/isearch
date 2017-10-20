@@ -18,8 +18,8 @@
   .header {
     height: 70px;
     background-color: #e75826;
-    border-radius: 3px;
-    border: 1px solid grey;
+    /*border-radius: 3px;*/
+    box-shadow: 0px 1.5px 1px 0 rgba(0, 0, 0, 0.16);
     margin-bottom: 10px;
     color: white;
     padding-left: 25px;
@@ -86,13 +86,14 @@
     font-size: 15px;
     font-weight: 300;
     margin-left: 12px;
+    margin-top: 12px;
     padding: 0 11px 0 13px;
     text-overflow: ellipsis;
     width: 400px;
     height: 29px;
    /*border-radius: 2px;*/
-   border: none;
-   box-shadow: 0px 1.5px 1px 0 rgba(0, 0, 0, 0.16);
+     border: none;
+     box-shadow: 0px 1.5px 1px 0 rgba(0, 0, 0, 0.16);
   }
 
   #pac-input:focus {
@@ -148,10 +149,13 @@
   }
 
   button {
-    margin: 10px;
-    font-size: 15px;
-    border-radius: 5px;
-    background-color: white;
+    margin: 25px;
+   font-size: 15px;
+   border-radius: 4px;
+   background-color: white;
+   border: none;
+   box-shadow: 0px 2px 2px 0px rgba(128, 128, 128, 0.45);
+   padding: 7px 15px 7px 15px;
   }
 
   button:hover {
