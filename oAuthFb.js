@@ -10,7 +10,7 @@
     FB.AppEvents.logPageView();
     FB.getLoginStatus((res) => {
       if (res.status === 'connected') {
-        $('button#loginFB').remove();
+        // $('button#loginFB').remove();
         // info();
       } else if (res.status === 'not_authorized') {
         // document.getElementById('status').innerHTML = 'we are not logged in';
