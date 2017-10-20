@@ -31,7 +31,7 @@
      FB.login(function(res) {
       //  console.log(res);
        if (res.status === 'connected') {
-         document.getElementById('status').innerHTML = 'we are connected';
+        //  document.getElementById('status').innerHTML = 'we are connected';
        } else if (res.status === 'not_authorized') {
         //  document.getElementById('status').innerHTML = 'we are not logged in';
        } else {
@@ -42,6 +42,7 @@
 
    function info() {
      FB.api('/me', 'GET', {fields: 'first_name, last_name, name, id, picture.width(150).height(150)'}, function(response) {
+        $('infoFB').empty();
         document.getElementById('info').innerHTML = `Hello ${response.name}`;
         document.getElementById('image').innerHTML = "<img src='" + response.picture.data.url + "'>";
       });
