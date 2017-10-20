@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>ISearch</title>
+    <script type="text/javascript">
+      function toggle(id) {
+        $(`li#${id} span`).toggle('slow', 'linear');
+
+      }
+      // function mouseout(id) {
+      //   $(`li#${id} span`).hide(2000);
+      // }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <script type='text/javascript' src='./aAuthFb.js'> </script>
+    <div class="header">
+
+      <div class='facebook'>
+        <div id='status'> </div>
+        <div id="info"> </div>
+        <div id="image"> </div>
+        <button type="button" onclick='login()' name="button">Login Via Facebook</button>
+        <button type="button" onclick='info()' name="button">Info</button>
+      </div>
+      <h2>ISearch</h2>
+
+    </div>
+    <div class="main">
+
+      <link rel="stylesheet" type="text/css" href="isearch.css">
+      <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+      <div id="map"></div>
+      <div id="details">
+        <ul id='list' class='nav'></ul>
+      </div>
+    </div>
+    <script type="text/javascript" src='main.js'></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQQc2QMAapDoKMJJOmGiZY6Jdw7cTbuxA&libraries=places&callback=initAutocomplete"
+         async defer></script>
+  </body>
+</html>
