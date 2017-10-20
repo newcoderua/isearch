@@ -155,8 +155,21 @@
     background-color: #fba688;
     color: white;
   }
+
   img {
-    height: 50px;
+    height: 55px;
     float: right;
+    margin-right: 25px;
+    border-radius: 50px;
+  }
+
+  .facebook {
+    display: flex;
+    font-size: 18px;
+  }
+
+  #info {
     margin-right: 20px;
+    display: flex;
+    align-items: center;
   }
