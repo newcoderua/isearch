@@ -165,7 +165,7 @@
     color: white;
   }
 
-  .image < img {
+  .image > img {
     height: 55px;
     float: right;
     margin-right: 25px;
