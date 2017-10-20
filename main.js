@@ -111,8 +111,11 @@ function initAutocomplete() {
           }
           return result;
         }
+        //   debugger
+        
 
         $('#list').append(`<li class='answer' onclick=toggle("${parseInt(Object.keys(marker.__e3_.mouseout)[0])}")
+        onmouseover=openInfoWindow()
         id="${parseInt(Object.keys(marker.__e3_.mouseout)[0])}">
         <div><p>${marker.title}</p>
         <span class='hidden'>

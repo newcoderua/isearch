@@ -3,6 +3,7 @@
   #map {
     height: 90%;
     width: 55%;
+    margin-top: 23px;
   }
   /* Optional: Makes the sample page fill the window. */
   html, body {
@@ -164,7 +165,7 @@
     color: white;
   }
 
-  #img {
+  .image < img {
     height: 55px;
     float: right;
     margin-right: 25px;
