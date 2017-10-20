@@ -33,7 +33,7 @@
         $('button#infoFB').remove();
         $('button#loginFB').remove();
         document.getElementById('info').innerHTML = `${response.name}`;
-        document.getElementById('image').innerHTML = "<img src='" + response.picture.data.url + "'>";
+        document.getElementById('image').innerHTML = "<img id='img-id' src='" + response.picture.data.url + "'>";
       });
    }
 
