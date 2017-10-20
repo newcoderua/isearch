@@ -11,7 +11,7 @@
     FB.getLoginStatus((res) => {
       if (res.status === 'connected') {
         $('button#loginFB').remove();
-        info();
+        // info();
       } else if (res.status === 'not_authorized') {
         // document.getElementById('status').innerHTML = 'we are not logged in';
       } else {
@@ -44,6 +44,7 @@
    function info() {
      FB.api('/me', 'GET', {fields: 'first_name, last_name, name, id, picture.width(150).height(150)'}, function(response) {
         $('button#infoFB').remove();
+        $('button#loginFB').remove();
         document.getElementById('info').innerHTML = `Hello ${response.name}`;
         document.getElementById('image').innerHTML = "<img src='" + response.picture.data.url + "'>";
       });
