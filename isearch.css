@@ -24,6 +24,7 @@
     padding-left: 25px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .main {
@@ -139,4 +140,17 @@
 
   .hidden {
     display: none;
+  }
+
+  button {
+    margin: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  button:hover {
+     border: 2px solid white;
+    background-color: #fba688;
+    color: white;
   }

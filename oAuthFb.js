@@ -10,11 +10,11 @@
     FB.AppEvents.logPageView();
     FB.getLoginStatus((res) => {
       if (res.status === 'connected') {
-        document.getElementById('status').innerHTML = 'connected ✅';
+        document.getElementById('loginFB').empty();
       } else if (res.status === 'not_authorized') {
-        document.getElementById('status').innerHTML = 'we are not logged in';
+        // document.getElementById('status').innerHTML = 'we are not logged in';
       } else {
-        document.getElementById('status').innerHTML = 'you are not logged into Facebook';
+        // document.getElementById('status').innerHTML = 'you are not logged into Facebook';
       }
     });
   };
@@ -33,9 +33,9 @@
        if (res.status === 'connected') {
          document.getElementById('status').innerHTML = 'we are connected';
        } else if (res.status === 'not_authorized') {
-         document.getElementById('status').innerHTML = 'we are not logged in';
+        //  document.getElementById('status').innerHTML = 'we are not logged in';
        } else {
-         document.getElementById('status').innerHTML = 'you are not logged into Facebook';
+        //  document.getElementById('status').innerHTML = 'you are not logged into Facebook';
        }
      });
    }
